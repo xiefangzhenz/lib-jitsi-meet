@@ -1514,6 +1514,8 @@ JitsiConference.prototype._onMemberBotTypeChanged = function(jid, botType) {
 JitsiConference.prototype.onMemberLeft = function(jid) {
     const id = Strophe.getResourceFromJid(jid);
 
+    console.log('diguaceshi')
+
     if (id === 'focus' || this.myUserId() === id) {
         return;
     }
